@@ -1,0 +1,22 @@
+{
+  "name": "react-native-themes",
+  "version": "1.0.0",
+  "description": "Library that allows you to integrate multiple themes",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "theme"
+  ],
+  "peerDependencies": {
+    "react-native": ">=0.47.0",
+    "react-native-event-listeners": "^1.0.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
