@@ -5,7 +5,6 @@ import {
   View,
   Button
 } from 'react-native';
-//import Theme from 'rn-color-theme';
 import Theme from 'react-native-themes';
 import styleSheet from './AppStyles';
 import Colors from './Colors';
@@ -33,7 +32,7 @@ export default class App extends Component {
     Theme.removeThemeListener(this.listener);
   }
 
- 
+
 
   changeTheme = () => {
     if (Theme.getColorTheme() === 'regular') {
@@ -46,7 +45,7 @@ export default class App extends Component {
 
   render() {
     styles = Theme.getStyles(styleSheet);
-    const colors = Theme.getColors();
+    //const colors = Theme.getColors();
 
     return (
       <View style={styles.container}>

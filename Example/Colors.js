@@ -1,4 +1,3 @@
-//import Theme from 'rn-color-theme';
 import Theme from 'react-native-themes';
 
 const colors = new Theme.Colors({
