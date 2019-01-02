@@ -10,9 +10,7 @@
     "react": "16.6.3",
     "react-native": "0.57.8",
     "react-native-event-listeners": "^1.0.3",
-    "react-native-themes": "^1.0.0",
-    "react-navigation": "^3.0.9",
-    "rn-color-theme": "0.0.7"
+    "react-native-themes": "^1.0.0"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",

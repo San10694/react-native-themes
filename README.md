@@ -4,6 +4,8 @@
 ## Getting started
 
 `$ npm install react-native-themes --save`
+                OR
+ `$ yarn add react-native-themes --save`
 
 
 
