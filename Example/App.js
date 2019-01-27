@@ -11,12 +11,11 @@ import Colors from './Colors';
 
 
 let styles;
-let currentTheme;
 export default class App extends Component {
 
   constructor(props) {
     super(props);
-    global.lang = 'en';
+
     this.state = {
       currentTheme: Theme.getColorTheme()
     };
@@ -35,10 +34,10 @@ export default class App extends Component {
 
 
   changeTheme = () => {
-    if (Theme.getColorTheme() === 'regular') {
-      Theme.setColorTheme('darkTheme');
+    if (Theme.getColorTheme() === 'DEFAULT_THEME') {
+      Theme.setColorTheme('DARK_THEME');
     } else {
-      Theme.setColorTheme('regular');
+      Theme.setColorTheme('DEFAULT_THEME');
     }
     this.setState({ currentTheme: Theme.getColorTheme() });
   };

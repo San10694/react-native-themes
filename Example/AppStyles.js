@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-export default (colors) => StyleSheet.create({
+export default (Colors) => StyleSheet.create({
     container: {
         flex: 1
     },
@@ -8,17 +8,17 @@ export default (colors) => StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: colors.background,
+        backgroundColor: Colors.background,
     },
     title: {
         fontSize: 20,
         textAlign: 'center',
         margin: 10,
-        color: colors.titleColor
+        color: Colors.titleColor
     },
     text: {
         textAlign: 'center',
         margin: 10,
-        color: colors.fontColor
+        color: Colors.fontColor
     }
 });

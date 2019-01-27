@@ -13,15 +13,17 @@
 
 ### Step 1 - Define the color themes.
 ```javascript
+//colors.js
 import Theme from 'react-native-themes';
 
 const colors = new Theme.Colors({
-    dark: {
-        backgroundColor: '#3b5998',
-    },
-    light: {
+     DEFAULT_THEME: {
         backgroundColor: '#fff',
+    },
+    DARK_THEME: {
+        backgroundColor: '#3b5998',
     }
+   
 });
 
 export default colors;
@@ -34,6 +36,7 @@ Note - Do not forget to import this file at the top of your component(ie. App.js
 By default the first theme in the colors template is selected. In the root component of your app like `App.js`, register `ThemeListeners` for the component to act on the default theme applied.
 
 ```js
+//App.js
 componentWillMount() {
     this.listener = Theme.addThemeListener(() => {
       this.setState({});
@@ -128,12 +131,12 @@ Example-
         ...
             <Button
               onPress={() => {
-                if (Theme.getColorTheme() === 'dark') {
-                  Theme.setColorTheme('light', () => {
+                if (Theme.getColorTheme() === 'DEFAULT_THEME') {
+                  Theme.setColorTheme('DARK_THEME', () => {
                     this.setState({}); //force re-render of the component
                   });
                 } else {
-                  Theme.setColorTheme('dark', () => {
+                  Theme.setColorTheme('DEFAULT_THEME', () => {
                     this.setState({}); //force re-render of the component
                   }));
                 }

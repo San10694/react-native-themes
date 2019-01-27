@@ -1,14 +1,14 @@
 import Theme from 'react-native-themes';
 
 const colors = new Theme.Colors({
-  regular: {
+  DEFAULT_THEME: {
     titleColor: '#1c7ee7',
     primaryTextColor: '#3b5998',
     fontColor: '#fff',
     background: '#e73536',
     menuItemColor: '#000'
   },
-  darkTheme: {
+  DARK_THEME: {
     titleColor: '#9b9b9b',
     primaryTextColor: '#9b9b9b',
     fontColor: '#fff',
